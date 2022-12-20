@@ -5,8 +5,8 @@
 int main()
 {
 
-    int N = 0, i, j, cont = 0;
-    char String1[10000], String2[10000], diferenca = 0;
+    int N = 0, i, j, cont = 0, diferenca = 0, cont2 = 0, resultado = 0;
+    char String1[10000], String2[10000];
 
     scanf("%d", &N);
 
@@ -23,27 +23,23 @@ int main()
             {
                 while(String1[i] < String2[i])
                 {
-                    cont++;
+                    cont2++;
                     String1[i]++;
                 }
             }
             else
             {
-               diferenca = String1[i] - 123;
-
-                while(String1[i] < String2[i])
-                {
-                    cont++;
-                    String1[i]++;
-                }
-
-                cont += diferenca;
-
+                diferenca = 122 - String1[i];
+                cont = String2[i] - 96;
             }
+            resultado += abs(diferenca) + cont2 + cont;
+            diferenca = 0;
+            cont2 = 0;
+            cont = 0;
         }
 
-        printf("%d\n", abs(cont));
-        cont = 0;
+        printf("%d\n", abs(resultado));
+        resultado = 0;
 
         N--;
     }
