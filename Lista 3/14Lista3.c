@@ -36,9 +36,7 @@ int main()
             }
 
             for(i = 0; i < cont; i++)
-            {
                 String[indice[i]] = NewString[i];
-            }
 
             for(i = 0; i < strlen(String); i++)
                 printf("%c", String[i]);
