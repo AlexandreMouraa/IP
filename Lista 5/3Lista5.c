@@ -56,7 +56,7 @@ int main()
         }
 
         if(cont == 0)
-            printf("--NOT FOUND--\n");
+            printf("-- NOT FOUND --\n");
 
         cont = 0;
     }
