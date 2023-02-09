@@ -27,7 +27,7 @@ int main()
 
     scanf("%d", &N);
 
-    Vetores Numeros[4];
+    Vetores Numeros[N];
 
     for(i = 0; i < N; i++)
     {
@@ -41,14 +41,14 @@ int main()
 
     for(i = 0; i < N; i++)
     {
-        for(j = i + 1; j < 4; j++)
+        for(j = i + 1; j < N; j++)
         {
             if(Numeros[i].media > Numeros[j].media)
                 change(&Numeros[i], &Numeros[j]);
         }
     }
 
-    for(i = 0; i < 4; i++)
+    for(i = 0; i < N; i++)
         printf("Vetor: (%.2lf, %.2lf, %.2lf, %.2lf) Norma: %.2lf\n", Numeros[i].vetor[0], Numeros[i].vetor[1], Numeros[i].vetor[2], Numeros[i].vetor[3], Numeros[i].media);
         
     return (0);
