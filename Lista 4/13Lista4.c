@@ -28,7 +28,7 @@ int main()
         aux = abs(lin - raio);
         aux2 = abs(col - raio);
 
-        if(col - raio >= 0 && col + raio < tamanhoimg && lin - raio >= 0 && lin + raio < tamanhoimg)//Depois de um seculo eu consegui achar o erro, e era exatamente nessa linha, nao testando as dimensoes caso fossem <= 0...
+        if(col - raio >= 0 && col + raio < tamanhoimg && lin - raio >= 0 && lin + raio < tamanhoimg)//Depois de um seculo eu consegui achar o erro, e era exatamente nessa linha, nao testando as dimensoes caso fossem < 0...
         {
 
         switch (preenchimento)//1 borda, 2 preencher
