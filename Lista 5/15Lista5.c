@@ -26,6 +26,7 @@ int main()
     {
         scanf("%d %d %d %d %d", &k, &g, &Likes, &retweets, &mencoes);
         Matriz[k][g] = (Users *)malloc(sizeof(Users));
+        Matriz[k][g] != NULL ?  : exit(1);
         Matriz[k][g]->Likes = Likes;
         Matriz[k][g]->retweets = retweets;
         Matriz[k][g]->mencoes = mencoes;
