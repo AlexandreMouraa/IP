@@ -46,9 +46,11 @@ for(i = 0; i < N; i++)
     Newstring = newstrcat(string1, string2);
  
     printf("%s\n", Newstring);
+    //free(Newstring) -> Where It should be...
 }
     
-    free(Newstring);
+    free(Newstring);//A little mistake here, where this free should be inside the loop after printing, not outside, a common mistake considering the hurry to finish the test
+                    //In this case I only free the last call of the dinamic allocation
  
     return (0);
 }
