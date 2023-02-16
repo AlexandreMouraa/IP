@@ -36,6 +36,9 @@ char string1[201], string2[201], *Newstring;
  
 scanf("%d", &N);
  
+ //In a more correct way, a shold have use a pointer to N sizes like this:
+ //char *Newstring[N];
+ 
 for(i = 0; i < N; i++)
 {
     getchar();
@@ -44,8 +47,12 @@ for(i = 0; i < N; i++)
     scanf("%[^\n]s", string2);
  
     Newstring = newstrcat(string1, string2);
+    //Newstring[i] = newstrcat(string1, string2);
  
     printf("%s\n", Newstring);
+    //printf("%s\n", Newstring[i]);
+    //free(Newstring[i]); Note this one is different from the bellow one, just because it shows another way.
+ 
     //free(Newstring) -> Where It should be...
 }
     
