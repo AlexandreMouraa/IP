@@ -14,7 +14,7 @@ int Achaidentidade(int Tam, int Matrix[Tam][Tam])
                     if(Matrix[i][j] != 1)
                     {
                         return (0);
-                        break;
+                        break;//This break were not needed
                     }
                 }
                 else
@@ -22,7 +22,7 @@ int Achaidentidade(int Tam, int Matrix[Tam][Tam])
                     if(Matrix[i][j] != 0)
                     {
                         return(0);
-                        break;
+                        break;//This break were not needed
                     }
                 }
  
