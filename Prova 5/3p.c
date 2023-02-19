@@ -36,7 +36,7 @@ char string1[201], string2[201], *Newstring;
  
 scanf("%d", &N);
  
- //In a more correct way, a shold have use a pointer to N sizes like this:
+ //In a more correct way, I shold have use a pointer to N sizes like this:
  //char *Newstring[N]; (An example in comments of the way downbellow).
  
 for(i = 0; i < N; i++)
